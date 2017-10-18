@@ -1,0 +1,221 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.page-bg {
+    margin: auto;
+    background: url('./backgroud.jpg');
+    background-position: center center;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    /*opacity: 0.5;*/
+    filter: alpha(opacity=70);
+
+}
+
+.tint{
+    background: black;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+/*.navbar-transparency{*/
+
+    /*background-color:#fff; !*whichever you want*!*/
+    /*opacity: 0.7;*/
+    /*filter: alpha(opacity=50);*/
+
+/*}*/
+
+.jumbotron {
+
+    position: relative;
+    top: 100px;
+    opacity: 0.5;
+    background-color: #eee;
+    color: #111;
+
+}
+
+/*h1 {*/
+    /*font-size: 2em;*/
+/*}*/
+
+/*p {*/
+    /*font-size: 1.2em;*/
+/*}*/
+
+/*.btn {*/
+    /*padding: 0.5em;*/
+/*}*/
+
+
+/*!*h1{*!*/
+
+    /*!*position: absolute;*!*/
+    /*!*left: 50%;*!*/
+    /*!*top: 50%;*!*/
+
+/*!*}*!*/
+
+.welcomepg{
+
+    height: 400px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.navigation{
+    margin: 0px auto;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+}
+.navigation .item{
+    position:absolute;
+}
+
+.home{
+    top:50px;
+    left:360px;
+}
+.shop{
+    top:90px;
+    left:625px;
+}
+.camera{
+    top:230px;
+    left:835px;
+}
+.fav{
+    top:420px;
+    left:950px;
+}
+a.icon{
+    width:52px;
+    height:52px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    cursor:pointer;
+}
+
+.home a.icon{
+    background:transparent url(images/user.png) no-repeat 0px 0px;
+}
+.shop a.icon{
+    background:transparent url(images/fav.png) no-repeat 0px 0px;
+}
+.camera a.icon{
+    background:transparent url(images/fav.png) no-repeat 0px 0px;
+}
+.fav a.icon{
+    background:transparent url(images/fav.png) no-repeat 0px 0px;
+}
+.navigation .item a.active{
+    background-position:0px -52px;
+}
+.item img.circle{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:52px;
+    height:52px;
+    opacity:0.1;
+}
+.item h2{
+    position:absolute;
+    width:250px;
+    height:52px;
+    color:#fff;
+    font-size:18px;
+    top:0px;
+    left:52px;
+    text-indent:10px;
+    line-height:52px;
+    text-shadow:1px 1px 1px #fff;
+    text-transform:uppercase;
+}
+.item h2.active{
+    color:#fff;
+    text-shadow:1px 0px 1px #555;
+}
+.item ul{
+    list-style:none;
+    position:absolute;
+    top:60px;
+    left:25px;
+    display:none;
+}
+.item ul li a{
+    font-size:15px;
+    text-decoration:none;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:#222;
+    padding:3px;
+    float:left;
+    clear:both;
+    min-width:100px;
+    text-shadow:1px 1px 1px #fff;
+}
+.item ul li a:hover{
+    background-color:#fff;
+    color:#444;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    -moz-box-shadow:1px 1px 4px #666;
+    -webkit-box-shadow:1px 1px 4px #666;
+    box-shadow:1px 1px 4px #666;
+}
+
+#technology{
+
+    width:115px;
+
+}
+
+#language{
+
+    width:115px;
+
+}
+
+.whiteText{
+    color: white;
+}
+
+.needBold{
+    font-weight: 700;
+}
+
+ul{
+    list-style-type: circle;
+}
